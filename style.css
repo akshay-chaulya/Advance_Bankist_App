@@ -34,7 +34,7 @@ body {
     color: #444;
     line-height: 1.9;
     background-color: #f3f3f3;
-    margin: 0;
+    height: auto !important;
 }
 
 /* GENERAL ELEMENTS */
@@ -547,6 +547,7 @@ button:focus {
 .footer {
     background-color: #37383d;
     padding: 10rem 3rem;
+    color: #aaaaaa;
 }
 
 .footer__nav {
@@ -566,7 +567,7 @@ button:focus {
 
 .footer__link {
     font-size: 1.6rem;
-    color: #eee;
+    color: #aaaaaa;
     text-decoration: none;
 }
 
@@ -575,6 +576,38 @@ button:focus {
     display: block;
     height: 5rem;
     margin-bottom: 5rem;
+    filter: opacity(.5);
+}
+
+.footer__socialMidias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.socialMidias--links {
+    display: flex;
+    list-style: none;
+}
+
+.socialMidias--links-link a {
+    margin-right: 4rem;
+    background-color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.socialMidias--links-link svg {
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    /* opacity: .5; */
 }
 
 /*****************************************************
@@ -882,5 +915,8 @@ button:focus {
         font-size: 1.4rem;
     }
 
-
+    .footer__socialMidias {
+        justify-content: center;
+        gap: 2rem;
+    }
 }
