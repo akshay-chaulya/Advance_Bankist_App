@@ -577,6 +577,29 @@ button:focus {
     margin-bottom: 5rem;
 }
 
+/*****************************************************
+******************************************************
+******************************************************/
+
+/* HIDDEN CLASS */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* OVERLAY */
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.558);
+    backdrop-filter: blur(4px);
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.5s ease 0s;
+}
+
 /* MODAL */
 .modal {
     position: fixed;
@@ -628,25 +651,6 @@ button:focus {
     grid-column: 1 / span 2;
     justify-self: center;
     margin-top: 1rem;
-}
-
-/* OVERLAY */
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.558);
-    backdrop-filter: blur(4px);
-    left: 0;
-    top: 0;
-    z-index: 100;
-    transition: all 0.5s ease 0s;
-}
-
-/* HIDDEN CLASS */
-.hidden {
-    visibility: hidden;
-    opacity: 0;
 }
 
 /* FOR MOBILE MENUS */
